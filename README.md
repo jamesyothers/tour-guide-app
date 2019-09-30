@@ -1,1 +1,1 @@
-# tour-guide-app
+# just-java
