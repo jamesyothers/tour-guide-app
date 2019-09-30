@@ -80,25 +80,25 @@ public class MuseumsFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<ListItem> words = new ArrayList<ListItem>();
-        words.add(new ListItem("one", "lutti", R.drawable.number_one,
+        words.add(new ListItem("Rainbow Vomit", "Rainbow Vomit", R.drawable.number_one,
                 R.raw.number_one));
-        words.add(new ListItem("two", "otiiko", R.drawable.number_two,
+        words.add(new ListItem("The George W. Bush Presidential Library and Museum", "The George W. Bush Presidential Library and Museum", R.drawable.number_two,
                 R.raw.number_two));
-        words.add(new ListItem("three", "tolookosu", R.drawable.number_three,
+        words.add(new ListItem("The Sixth Floor Museum at Dealey Plaza", "The Sixth Floor Museum at Dealey Plaza", R.drawable.number_three,
                 R.raw.number_three));
-        words.add(new ListItem("four", "oyyisa", R.drawable.number_four,
+        words.add(new ListItem("Dallas Museum of Art", "Dallas Museum of Art", R.drawable.number_four,
                 R.raw.number_four));
-        words.add(new ListItem("five", "massokka", R.drawable.number_five,
+        words.add(new ListItem("Perot Museum of Nature and Science", "Perot Museum of Nature and Science", R.drawable.number_five,
                 R.raw.number_five));
-        words.add(new ListItem("six", "temmokka", R.drawable.number_six,
+        words.add(new ListItem("Meadows Museum", "Meadows Museum", R.drawable.number_six,
                 R.raw.number_six));
-        words.add(new ListItem("seven", "kenekaku", R.drawable.number_seven,
+        words.add(new ListItem("Frontiers of Flight Museum", "Frontiers of Flight Museum", R.drawable.number_seven,
                 R.raw.number_seven));
-        words.add(new ListItem("eight", "kawinta", R.drawable.number_eight,
+        words.add(new ListItem("Crow Collection of Asian Art", "Crow Collection of Asian Art", R.drawable.number_eight,
                 R.raw.number_eight));
-        words.add(new ListItem("nine", "wo’e", R.drawable.number_nine,
+        words.add(new ListItem("Nasher Sculpture Center", "Nasher Sculpture Center", R.drawable.number_nine,
                 R.raw.number_nine));
-        words.add(new ListItem("ten", "na’aacha", R.drawable.number_ten,
+        words.add(new ListItem("Dallas Holocaust and Human Rights Museum", "allas Holocaust and Human Rights Museum", R.drawable.number_ten,
                 R.raw.number_ten));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
