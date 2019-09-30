@@ -17,7 +17,7 @@ import java.util.ArrayList;
 /**
  * {@link Fragment} that displays a list of number vocabulary words.
  */
-public class RestaurantsFragment extends Fragment {
+public class EatsFragment extends Fragment {
 
     /** Handles playback of all the sound files */
     private MediaPlayer mMediaPlayer;
@@ -66,7 +66,7 @@ public class RestaurantsFragment extends Fragment {
         }
     };
 
-    public RestaurantsFragment() {
+    public EatsFragment() {
         // Required empty public constructor
     }
 
@@ -80,26 +80,26 @@ public class RestaurantsFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<ListItem> words = new ArrayList<ListItem>();
-        words.add(new ListItem("one", "lutti", R.drawable.number_one,
-                R.raw.number_one));
-        words.add(new ListItem("two", "otiiko", R.drawable.number_two,
-                R.raw.number_two));
-        words.add(new ListItem("three", "tolookosu", R.drawable.number_three,
-                R.raw.number_three));
-        words.add(new ListItem("four", "oyyisa", R.drawable.number_four,
-                R.raw.number_four));
-        words.add(new ListItem("five", "massokka", R.drawable.number_five,
-                R.raw.number_five));
-        words.add(new ListItem("six", "temmokka", R.drawable.number_six,
-                R.raw.number_six));
-        words.add(new ListItem("seven", "kenekaku", R.drawable.number_seven,
-                R.raw.number_seven));
-        words.add(new ListItem("eight", "kawinta", R.drawable.number_eight,
-                R.raw.number_eight));
-        words.add(new ListItem("nine", "wo’e", R.drawable.number_nine,
-                R.raw.number_nine));
-        words.add(new ListItem("ten", "na’aacha", R.drawable.number_ten,
-                R.raw.number_ten));
+        words.add(new ListItem("Where are you going?", "minto wuksus",
+                R.raw.phrase_where_are_you_going));
+        words.add(new ListItem("What is your name?", "tinnә oyaase'nә",
+                R.raw.phrase_what_is_your_name));
+        words.add(new ListItem("My name is...", "oyaaset...",
+                R.raw.phrase_my_name_is));
+        words.add(new ListItem("How are you feeling?", "michәksәs?",
+                R.raw.phrase_how_are_you_feeling));
+        words.add(new ListItem("I’m feeling good.", "kuchi achit",
+                R.raw.phrase_im_feeling_good));
+        words.add(new ListItem("Are you coming?", "әәnәs'aa?",
+                R.raw.phrase_are_you_coming));
+        words.add(new ListItem("Yes, I’m coming.", "hәә’ әәnәm",
+                R.raw.phrase_yes_im_coming));
+        words.add(new ListItem("I’m coming.", "әәnәm",
+                R.raw.phrase_im_coming));
+        words.add(new ListItem("Let’s go.", "yoowutis",
+                R.raw.phrase_lets_go));
+        words.add(new ListItem("Come here.", "әnni'nem",
+                R.raw.phrase_come_here));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
@@ -114,7 +114,7 @@ public class RestaurantsFragment extends Fragment {
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
 
-        listView.setBackgroundColor(getResources().getColor(R.color.category_numbers));
+        listView.setBackgroundColor(getResources().getColor(R.color.category_phrases));
 
         // Set a click listener to play the audio when the list item is clicked on
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

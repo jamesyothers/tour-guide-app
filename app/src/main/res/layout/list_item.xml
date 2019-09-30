@@ -22,14 +22,6 @@
         android:orientation="vertical"
         android:paddingLeft="16dp">
 
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="16dp"
-            android:src="@drawable/baseline_play_arrow_white_24dp" />
-
         <TextView
             android:id="@+id/default_text_view"
             android:layout_width="match_parent"

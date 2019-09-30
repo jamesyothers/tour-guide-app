@@ -80,26 +80,16 @@ public class HistoricFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<ListItem> words = new ArrayList<ListItem>();
-        words.add(new ListItem("Where are you going?", "minto wuksus",
-                R.raw.phrase_where_are_you_going));
-        words.add(new ListItem("What is your name?", "tinnә oyaase'nә",
-                R.raw.phrase_what_is_your_name));
-        words.add(new ListItem("My name is...", "oyaaset...",
-                R.raw.phrase_my_name_is));
-        words.add(new ListItem("How are you feeling?", "michәksәs?",
-                R.raw.phrase_how_are_you_feeling));
-        words.add(new ListItem("I’m feeling good.", "kuchi achit",
-                R.raw.phrase_im_feeling_good));
-        words.add(new ListItem("Are you coming?", "әәnәs'aa?",
-                R.raw.phrase_are_you_coming));
-        words.add(new ListItem("Yes, I’m coming.", "hәә’ әәnәm",
-                R.raw.phrase_yes_im_coming));
-        words.add(new ListItem("I’m coming.", "әәnәm",
-                R.raw.phrase_im_coming));
-        words.add(new ListItem("Let’s go.", "yoowutis",
-                R.raw.phrase_lets_go));
-        words.add(new ListItem("Come here.", "әnni'nem",
-                R.raw.phrase_come_here));
+        words.add(new ListItem("father", "әpә", R.raw.family_father));
+        words.add(new ListItem("mother", "әṭa", R.raw.family_mother));
+        words.add(new ListItem("son", "angsi", R.raw.family_son));
+        words.add(new ListItem("daughter", "tune", R.raw.family_daughter));
+        words.add(new ListItem("older brother", "taachi", R.raw.family_older_brother));
+        words.add(new ListItem("younger brother", "chalitti", R.raw.family_younger_brother));
+        words.add(new ListItem("older sister", "teṭe", R.raw.family_older_sister));
+        words.add(new ListItem("younger sister", "kolliti", R.raw.family_younger_sister));
+        words.add(new ListItem("grandmother ", "ama", R.raw.family_grandmother));
+        words.add(new ListItem("grandfather", "paapa", R.raw.family_grandfather));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
@@ -114,7 +104,7 @@ public class HistoricFragment extends Fragment {
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
 
-        listView.setBackgroundColor(getResources().getColor(R.color.category_phrases));
+        listView.setBackgroundColor(getResources().getColor(R.color.category_family));
 
         // Set a click listener to play the audio when the list item is clicked on
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

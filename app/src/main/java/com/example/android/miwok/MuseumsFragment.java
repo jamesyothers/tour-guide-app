@@ -80,26 +80,14 @@ public class MuseumsFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<ListItem> words = new ArrayList<ListItem>();
-        words.add(new ListItem("father", "әpә", R.drawable.family_father,
-                R.raw.family_father));
-        words.add(new ListItem("mother", "әṭa", R.drawable.family_mother,
-                R.raw.family_mother));
-        words.add(new ListItem("son", "angsi", R.drawable.family_son,
-                R.raw.family_son));
-        words.add(new ListItem("daughter", "tune", R.drawable.family_daughter,
-                R.raw.family_daughter));
-        words.add(new ListItem("older brother", "taachi", R.drawable.family_older_brother,
-                R.raw.family_older_brother));
-        words.add(new ListItem("younger brother", "chalitti", R.drawable.family_younger_brother,
-                R.raw.family_younger_brother));
-        words.add(new ListItem("older sister", "teṭe", R.drawable.family_older_sister,
-                R.raw.family_older_sister));
-        words.add(new ListItem("younger sister", "kolliti", R.drawable.family_younger_sister,
-                R.raw.family_younger_sister));
-        words.add(new ListItem("grandmother ", "ama", R.drawable.family_grandmother,
-                R.raw.family_grandmother));
-        words.add(new ListItem("grandfather", "paapa", R.drawable.family_grandfather,
-                R.raw.family_grandfather));
+        words.add(new ListItem("red", "weṭeṭṭi", R.raw.color_red));
+        words.add(new ListItem("mustard yellow", "chiwiiṭә", R.raw.color_mustard_yellow));
+        words.add(new ListItem("dusty yellow", "ṭopiisә", R.raw.color_dusty_yellow));
+        words.add(new ListItem("green", "chokokki", R.raw.color_green));
+        words.add(new ListItem("brown", "ṭakaakki", R.raw.color_brown));
+        words.add(new ListItem("gray", "ṭopoppi", R.raw.color_gray));
+        words.add(new ListItem("black", "kululli", R.raw.color_black));
+        words.add(new ListItem("white", "kelelli", R.raw.color_white));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
@@ -114,7 +102,7 @@ public class MuseumsFragment extends Fragment {
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
 
-        listView.setBackgroundColor(getResources().getColor(R.color.category_family));
+        listView.setBackgroundColor(getResources().getColor(R.color.category_colors));
 
         // Set a click listener to play the audio when the list item is clicked on
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

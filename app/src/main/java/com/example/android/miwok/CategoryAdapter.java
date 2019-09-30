@@ -24,7 +24,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 /**
  * {@link CategoryAdapter} is a {@link FragmentPagerAdapter} that can provide the layout for
- * each list item based on a data source which is a list of {@link Word} objects.
+ * each list item based on a data source which is a list of {@link ListItem} objects.
  */
 public class CategoryAdapter extends FragmentPagerAdapter {
 
@@ -49,13 +49,13 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new RestaurantsFragment();
-        } else if (position == 1) {
-            return new MuseumsFragment();
-        } else if (position == 2) {
             return new OutdoorFragment();
-        } else {
+        } else if (position == 1) {
             return new HistoricFragment();
+        } else if (position == 2) {
+            return new MuseumsFragment();
+        } else {
+            return new EatsFragment();
         }
     }
 

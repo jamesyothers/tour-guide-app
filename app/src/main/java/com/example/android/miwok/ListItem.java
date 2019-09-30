@@ -9,7 +9,7 @@ public class ListItem {
     /** Audio resource ID for the word */
     private int mAudioResourceId;
 
-    public ListItem(String defaultTranslation, String miwokTranslation, int audioResourceId) {
+        public ListItem(String defaultTranslation, String miwokTranslation, int audioResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
         mAudioResourceId = audioResourceId;

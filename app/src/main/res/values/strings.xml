@@ -17,7 +17,7 @@
     <string name="app_name">Sites Around Dallas Texas</string>
 
     <!-- Category name for phrases [CHAR LIMIT=20] -->
-    <string name="category_phrases">Restaurants</string>
+    <string name="category_phrases">Eats</string>
 
     <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
     <string name="category_colors">Museums</string>
