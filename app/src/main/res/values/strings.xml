@@ -20,10 +20,10 @@
     <string name="category_phrases">Eats</string>
 
     <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
-    <string name="category_colors">Museums</string>
+    <string name="category_colors">Outdoors</string>
 
     <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
-    <string name="category_numbers">Outdoors</string>
+    <string name="category_numbers">Museums</string>
 
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
     <string name="category_family">Historic</string>

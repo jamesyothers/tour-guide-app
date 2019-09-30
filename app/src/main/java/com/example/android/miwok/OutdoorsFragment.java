@@ -17,7 +17,7 @@ import java.util.ArrayList;
 /**
  * {@link Fragment} that displays a list of number vocabulary words.
  */
-public class OutdoorFragment extends Fragment {
+public class OutdoorsFragment extends Fragment {
 
     /** Handles playback of all the sound files */
     private MediaPlayer mMediaPlayer;
@@ -66,7 +66,7 @@ public class OutdoorFragment extends Fragment {
         }
     };
 
-    public OutdoorFragment() {
+    public OutdoorsFragment() {
         // Required empty public constructor
     }
 
@@ -80,26 +80,14 @@ public class OutdoorFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<ListItem> words = new ArrayList<ListItem>();
-        words.add(new ListItem("one", "lutti", R.drawable.number_one,
-                R.raw.number_one));
-        words.add(new ListItem("two", "otiiko", R.drawable.number_two,
-                R.raw.number_two));
-        words.add(new ListItem("three", "tolookosu", R.drawable.number_three,
-                R.raw.number_three));
-        words.add(new ListItem("four", "oyyisa", R.drawable.number_four,
-                R.raw.number_four));
-        words.add(new ListItem("five", "massokka", R.drawable.number_five,
-                R.raw.number_five));
-        words.add(new ListItem("six", "temmokka", R.drawable.number_six,
-                R.raw.number_six));
-        words.add(new ListItem("seven", "kenekaku", R.drawable.number_seven,
-                R.raw.number_seven));
-        words.add(new ListItem("eight", "kawinta", R.drawable.number_eight,
-                R.raw.number_eight));
-        words.add(new ListItem("nine", "wo’e", R.drawable.number_nine,
-                R.raw.number_nine));
-        words.add(new ListItem("ten", "na’aacha", R.drawable.number_ten,
-                R.raw.number_ten));
+        words.add(new ListItem("red", "weṭeṭṭi", R.raw.color_red));
+        words.add(new ListItem("mustard yellow", "chiwiiṭә", R.raw.color_mustard_yellow));
+        words.add(new ListItem("dusty yellow", "ṭopiisә", R.raw.color_dusty_yellow));
+        words.add(new ListItem("green", "chokokki", R.raw.color_green));
+        words.add(new ListItem("brown", "ṭakaakki", R.raw.color_brown));
+        words.add(new ListItem("gray", "ṭopoppi", R.raw.color_gray));
+        words.add(new ListItem("black", "kululli", R.raw.color_black));
+        words.add(new ListItem("white", "kelelli", R.raw.color_white));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
@@ -114,7 +102,7 @@ public class OutdoorFragment extends Fragment {
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
 
-        listView.setBackgroundColor(getResources().getColor(R.color.category_numbers));
+        listView.setBackgroundColor(getResources().getColor(R.color.category_colors));
 
         // Set a click listener to play the audio when the list item is clicked on
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
