@@ -86,7 +86,7 @@ public class MuseumsFragment extends Fragment {
                 R.raw.number_two));
         words.add(new ListItem("The Sixth Floor Museum at Dealey Plaza", "The Sixth Floor Museum at Dealey Plaza", R.drawable.number_three,
                 R.raw.number_three));
-        words.add(new ListItem("Dallas Museum of Art", "Dallas Museum of Art", R.drawable.number_four,
+        words.add(new ListItem("Dallas Museum of Art", "Dallas Museum of Art2", R.drawable.number_four,
                 R.raw.number_four));
         words.add(new ListItem("Perot Museum of Nature and Science", "Perot Museum of Nature and Science", R.drawable.number_five,
                 R.raw.number_five));
