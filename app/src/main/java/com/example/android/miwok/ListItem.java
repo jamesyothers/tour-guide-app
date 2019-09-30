@@ -1,6 +1,6 @@
 package com.example.android.miwok;
 
-public class Word {
+public class ListItem {
 
     private String mMiwokTranslation;
     private String mDefaultTranslation;
@@ -9,14 +9,14 @@ public class Word {
     /** Audio resource ID for the word */
     private int mAudioResourceId;
 
-    public Word(String defaultTranslation, String miwokTranslation, int audioResourceId) {
+    public ListItem(String defaultTranslation, String miwokTranslation, int audioResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
         mAudioResourceId = audioResourceId;
     }
 
 
-    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId, int audioResourceId) {
+    public ListItem(String defaultTranslation, String miwokTranslation, int imageResourceId, int audioResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
         mImageResourceId = imageResourceId;

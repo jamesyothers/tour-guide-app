@@ -17,7 +17,7 @@ import java.util.ArrayList;
 /**
  * {@link Fragment} that displays a list of number vocabulary words.
  */
-public class ColorsFragment extends Fragment {
+public class HistoricFragment extends Fragment {
 
     /** Handles playback of all the sound files */
     private MediaPlayer mMediaPlayer;
@@ -66,7 +66,7 @@ public class ColorsFragment extends Fragment {
         }
     };
 
-    public ColorsFragment() {
+    public HistoricFragment() {
         // Required empty public constructor
     }
 
@@ -79,27 +79,31 @@ public class ColorsFragment extends Fragment {
         mAudioManager = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
 
         // Create a list of words
-        final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("red", "weṭeṭṭi", R.drawable.color_red,
-                R.raw.color_red));
-        words.add(new Word("mustard yellow", "chiwiiṭә",
-                R.drawable.color_mustard_yellow, R.raw.color_mustard_yellow));
-        words.add(new Word("dusty yellow", "ṭopiisә",
-                R.drawable.color_dusty_yellow, R.raw.color_dusty_yellow));
-        words.add(new Word("green", "chokokki",
-                R.drawable.color_green, R.raw.color_green));
-        words.add(new Word("brown", "ṭakaakki",
-                R.drawable.color_brown, R.raw.color_brown));
-        words.add(new Word("gray", "ṭopoppi", R.drawable.color_gray,
-                R.raw.color_gray));
-        words.add(new Word("black", "kululli",
-                R.drawable.color_black, R.raw.color_black));
-        words.add(new Word("white", "kelelli",
-                R.drawable.color_white, R.raw.color_white));
+        final ArrayList<ListItem> words = new ArrayList<ListItem>();
+        words.add(new ListItem("Where are you going?", "minto wuksus",
+                R.raw.phrase_where_are_you_going));
+        words.add(new ListItem("What is your name?", "tinnә oyaase'nә",
+                R.raw.phrase_what_is_your_name));
+        words.add(new ListItem("My name is...", "oyaaset...",
+                R.raw.phrase_my_name_is));
+        words.add(new ListItem("How are you feeling?", "michәksәs?",
+                R.raw.phrase_how_are_you_feeling));
+        words.add(new ListItem("I’m feeling good.", "kuchi achit",
+                R.raw.phrase_im_feeling_good));
+        words.add(new ListItem("Are you coming?", "әәnәs'aa?",
+                R.raw.phrase_are_you_coming));
+        words.add(new ListItem("Yes, I’m coming.", "hәә’ әәnәm",
+                R.raw.phrase_yes_im_coming));
+        words.add(new ListItem("I’m coming.", "әәnәm",
+                R.raw.phrase_im_coming));
+        words.add(new ListItem("Let’s go.", "yoowutis",
+                R.raw.phrase_lets_go));
+        words.add(new ListItem("Come here.", "әnni'nem",
+                R.raw.phrase_come_here));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
-        WordAdapter adapter = new WordAdapter(getActivity(), words);
+        ListItemAdapter adapter = new ListItemAdapter(getActivity(), words);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
@@ -110,7 +114,7 @@ public class ColorsFragment extends Fragment {
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
 
-        listView.setBackgroundColor(getResources().getColor(R.color.category_colors));
+        listView.setBackgroundColor(getResources().getColor(R.color.category_phrases));
 
         // Set a click listener to play the audio when the list item is clicked on
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -121,7 +125,7 @@ public class ColorsFragment extends Fragment {
                 releaseMediaPlayer();
 
                 // Get the {@link Word} object at the given position the user clicked on
-                Word word = words.get(position);
+                ListItem word = words.get(position);
 
                 // Request audio focus so in order to play the audio file. The app needs to play a
                 // short audio file, so we will request audio focus with a short amount of time

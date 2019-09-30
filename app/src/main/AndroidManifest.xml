@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NumbersActivity"
+            android:name=".RestaurantsActivity"
             android:label="@string/category_numbers"
             android:parentActivityName=".MainActivity" >
             <meta-data
