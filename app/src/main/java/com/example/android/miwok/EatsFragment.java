@@ -90,16 +90,6 @@ public class EatsFragment extends Fragment {
                 R.raw.phrase_how_are_you_feeling));
         words.add(new ListItem("I’m feeling good.", "kuchi achit",
                 R.raw.phrase_im_feeling_good));
-        words.add(new ListItem("Are you coming?", "әәnәs'aa?",
-                R.raw.phrase_are_you_coming));
-        words.add(new ListItem("Yes, I’m coming.", "hәә’ әәnәm",
-                R.raw.phrase_yes_im_coming));
-        words.add(new ListItem("I’m coming.", "әәnәm",
-                R.raw.phrase_im_coming));
-        words.add(new ListItem("Let’s go.", "yoowutis",
-                R.raw.phrase_lets_go));
-        words.add(new ListItem("Come here.", "әnni'nem",
-                R.raw.phrase_come_here));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.

@@ -85,11 +85,6 @@ public class HistoricFragment extends Fragment {
         words.add(new ListItem("son", "angsi", R.raw.family_son));
         words.add(new ListItem("daughter", "tune", R.raw.family_daughter));
         words.add(new ListItem("older brother", "taachi", R.raw.family_older_brother));
-        words.add(new ListItem("younger brother", "chalitti", R.raw.family_younger_brother));
-        words.add(new ListItem("older sister", "teṭe", R.raw.family_older_sister));
-        words.add(new ListItem("younger sister", "kolliti", R.raw.family_younger_sister));
-        words.add(new ListItem("grandmother ", "ama", R.raw.family_grandmother));
-        words.add(new ListItem("grandfather", "paapa", R.raw.family_grandfather));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.

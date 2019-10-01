@@ -85,9 +85,6 @@ public class OutdoorsFragment extends Fragment {
         words.add(new ListItem("dusty yellow", "ṭopiisә", R.raw.color_dusty_yellow));
         words.add(new ListItem("green", "chokokki", R.raw.color_green));
         words.add(new ListItem("brown", "ṭakaakki", R.raw.color_brown));
-        words.add(new ListItem("gray", "ṭopoppi", R.raw.color_gray));
-        words.add(new ListItem("black", "kululli", R.raw.color_black));
-        words.add(new ListItem("white", "kelelli", R.raw.color_white));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
