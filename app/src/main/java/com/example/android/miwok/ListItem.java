@@ -2,34 +2,30 @@ package com.example.android.miwok;
 
 public class ListItem {
 
-    private String mMiwokTranslation;
-    private String mDefaultTranslation;
+    private String mListItem;
+    private String mListItemDescription;
     private int mImageResourceId = NO_IMAGE_PROVIDED;
     private static final int NO_IMAGE_PROVIDED = -1;
-    /** Audio resource ID for the word */
-    private int mAudioResourceId;
 
-        public ListItem(String defaultTranslation, String miwokTranslation, int audioResourceId) {
-        mDefaultTranslation = defaultTranslation;
-        mMiwokTranslation = miwokTranslation;
-        mAudioResourceId = audioResourceId;
+    public ListItem(String listItemDescription, String listItem) {
+        mListItemDescription = listItemDescription;
+        mListItem = listItem;
     }
 
 
-    public ListItem(String defaultTranslation, String miwokTranslation, int imageResourceId, int audioResourceId) {
-        mDefaultTranslation = defaultTranslation;
-        mMiwokTranslation = miwokTranslation;
+    public ListItem(String listItemDescription, String listItem, int imageResourceId) {
+        mListItemDescription = listItemDescription;
+        mListItem = listItem;
         mImageResourceId = imageResourceId;
-        mAudioResourceId = audioResourceId;
     }
 
 
-    public String getMiwokTranslation (){
-        return mMiwokTranslation;
+    public String getmListItem (){
+        return mListItem;
     }
 
-    public String getDefaultTranslation (){
-        return mDefaultTranslation;
+    public String getmListItemDescription (){
+        return mListItemDescription;
     }
 
     public int getImageResourceId (){
@@ -38,13 +34,6 @@ public class ListItem {
 
     public boolean hasImage() {
         return mImageResourceId != NO_IMAGE_PROVIDED;
-    }
-
-    /**
-     * Return the audio resource ID of the word.
-     */
-    public int getAudioResourceId() {
-        return mAudioResourceId;
     }
 
 }

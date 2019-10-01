@@ -17,7 +17,7 @@
         </activity>
         <activity
             android:name=".RestaurantsActivity"
-            android:label="@string/category_numbers"
+            android:label="@string/category_museums"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -25,7 +25,7 @@
         </activity>
         <activity
             android:name=".FamilyActivity"
-            android:label="@string/category_family"
+            android:label="@string/category_historic"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -33,7 +33,7 @@
         </activity>
         <activity
             android:name=".ColorsActivity"
-            android:label="@string/category_colors"
+            android:label="@string/category_outdoors"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -41,7 +41,7 @@
         </activity>
         <activity
             android:name=".PhrasesActivity"
-            android:label="@string/category_phrases"
+            android:label="@string/category_eats"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

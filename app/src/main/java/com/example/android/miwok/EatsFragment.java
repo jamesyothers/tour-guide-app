@@ -79,17 +79,12 @@ public class EatsFragment extends Fragment {
         mAudioManager = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
 
         // Create a list of words
-        final ArrayList<ListItem> words = new ArrayList<ListItem>();
-        words.add(new ListItem("Where are you going?", "minto wuksus",
-                R.raw.phrase_where_are_you_going));
-        words.add(new ListItem("What is your name?", "tinnә oyaase'nә",
-                R.raw.phrase_what_is_your_name));
-        words.add(new ListItem("My name is...", "oyaaset...",
-                R.raw.phrase_my_name_is));
-        words.add(new ListItem("How are you feeling?", "michәksәs?",
-                R.raw.phrase_how_are_you_feeling));
-        words.add(new ListItem("I’m feeling good.", "kuchi achit",
-                R.raw.phrase_im_feeling_good));
+        final ArrayList<ListItem> words = new ArrayList<>();
+        words.add(new ListItem("Where are you going?", "minto wuksus"));
+        words.add(new ListItem("What is your name?", "tinnә oyaase'nә"));
+        words.add(new ListItem("My name is...", "oyaaset..."));
+        words.add(new ListItem("How are you feeling?", "michәksәs?"));
+        words.add(new ListItem("I’m feeling good.", "kuchi achit"));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
@@ -117,26 +112,6 @@ public class EatsFragment extends Fragment {
                 // Get the {@link Word} object at the given position the user clicked on
                 ListItem word = words.get(position);
 
-                // Request audio focus so in order to play the audio file. The app needs to play a
-                // short audio file, so we will request audio focus with a short amount of time
-                // with AUDIOFOCUS_GAIN_TRANSIENT.
-                int result = mAudioManager.requestAudioFocus(mOnAudioFocusChangeListener,
-                        AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
-
-                if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
-                    // We have audio focus now.
-
-                    // Create and setup the {@link MediaPlayer} for the audio resource associated
-                    // with the current word
-                    mMediaPlayer = MediaPlayer.create(getActivity(), word.getAudioResourceId());
-
-                    // Start the audio file
-                    mMediaPlayer.start();
-
-                    // Setup a listener on the media player, so that we can stop and release the
-                    // media player once the sound has finished playing.
-                    mMediaPlayer.setOnCompletionListener(mCompletionListener);
-                }
             }
         });
 
