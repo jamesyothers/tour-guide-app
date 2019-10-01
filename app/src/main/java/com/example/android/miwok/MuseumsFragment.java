@@ -22,13 +22,13 @@ public class MuseumsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.word_list, container, false);
 
-        // Create a list of words
+        // Create a list of listItems
         final ArrayList<ListItem> listItems = new ArrayList<>();
 
         listItems.add(new ListItem(getResources().getString(R.string.vomit_description), getResources().getString(R.string.vomit), R.drawable.rainbow_vomit));
         listItems.add(new ListItem(getResources().getString(R.string.bush_description), getResources().getString(R.string.bush), R.drawable.bush_library));
         listItems.add(new ListItem(getResources().getString(R.string.delany_description), getResources().getString(R.string.delany), R.drawable.delany_min));
-        listItems.add(new ListItem(getResources().getString(R.string.vomit_description), getResources().getString(R.string.vomit), R.drawable.rainbow_vomit));
+        listItems.add(new ListItem(getResources().getString(R.string.perot_description), getResources().getString(R.string.perot), R.drawable.rainbow_vomit));
         listItems.add(new ListItem(getResources().getString(R.string.art_description), getResources().getString(R.string.art), R.drawable.art_museum));
 
         // Create an {@link ListItemAdapter}, whose data source is a list of {@link ListItem}s. The
@@ -44,7 +44,7 @@ public class MuseumsFragment extends Fragment {
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
 
-        listView.setBackgroundColor(getResources().getColor(R.color.category_numbers));
+        listView.setBackgroundColor(getResources().getColor(R.color.category));
 
         return rootView;
     }

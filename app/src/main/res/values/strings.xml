@@ -39,5 +39,37 @@
     <string name="bush_description">The permanent exhibit at the George W. Bush Presidential Library and Museum examines the life and career of George W. Bush.</string>
     <string name="art_description">A space of wonder and discovery where art comes alive.</string>
 
+    <string name="bonnie">Bonnie and Clyde Tour</string>
+    <string name="log">Log Cabin Village</string>
+    <string name="cowgirl">Cowgirl Hall of Fame</string>
+    <string name="railroad">Grapevine Vintage Railroad</string>
+    <string name="village">Dallas Heritage Village</string>
+    <string name="bonnie_description">One of history\'s most notorious couples hailed from Dallas.</string>
+    <string name="log_description">Real, historic log cabins from around North Texas were moved to this living-history village.</string>
+    <string name="cowgirl_description">This hall of fame celebrates women of the American West who demonstrated courage and pioneer spirit.</string>
+    <string name="railroad_description">Board a 1920s Victorian coach and take the Grapevine Vintage Railroad along the Cotton Belt.</string>
+    <string name="village_description">Uses historic buildings and furnishings and exhibits to teach visitors about life in Texas between 1840 and 1910.</string>
+
+    <string name="cedar">Cedar Ridge Nature Preserve</string>
+    <string name="white">White Rock Lake Parke</string>
+    <string name="trinity">Trinity Forest Adventure Park</string>
+    <string name="widow">Widowmaker Trail Rides</string>
+    <string name="audubon">Trinity River Audubon Center</string>
+    <string name="cedar_description">The preserve offers 9 miles of unpaved trails that wind through a lush terrain of native foliage and wildlife.</string>
+    <string name="white_description">White Rock Lake Park provides an ideal escape without having to leave the city limits.</string>
+    <string name="trinity_description">A seven-acre combination obstacle course and zip line park boasting over twenty zip-lines.</string>
+    <string name="widow_description">Two-hour horse back rides wind through 1000-acres of stunning landscape.</string>
+    <string name="audubon_description">Gateway to the 6,000-acre Great Trinity Forest, the largest urban bottomland hardwood forest in North America.</string>
+
+    <string name="teian">Tei-an (Japanese)</string>
+    <string name="lucia">Lucia (Italian)</string>
+    <string name="bullion">Bullion (French)</string>
+    <string name="hearth">Town Hearth (American)</string>
+    <string name="sachet">Sachet (Mediterranean)</string>
+    <string name="teian_description">specializes in Japanese soba noodles made by hand from nutty-tasting, nutritious buckwheat flour.</string>
+    <string name="lucia_description">Popular resource for creative Italian fare served in rustic, cozy quarters dating from the 1920s.</string>
+    <string name="bullion_description">Michelin-starred Chef Bruno Davaillon continues his gastronomical tour of the real France.</string>
+    <string name="hearth_description">Never has a rib-eye been at once so docile and full of flavor.</string>
+    <string name="sachet_description">Stephen Rogers and Allison Yoder, the husband-and-wife team behind Gemma have done something rather extraordinary.</string>
 
 </resources>
