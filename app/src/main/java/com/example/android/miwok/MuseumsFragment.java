@@ -82,13 +82,13 @@ public class MuseumsFragment extends Fragment {
         final ArrayList<ListItem> words = new ArrayList<ListItem>();
         words.add(new ListItem("Rainbow Vomit", "Rainbow Vomit", R.drawable.rainbow_vomit,
                 R.raw.number_one));
-        words.add(new ListItem("The George W. Bush Presidential Library and Museum", "The George W. Bush Presidential Library and Museum", R.drawable.bush_library,
+        words.add(new ListItem("GWB Presidential Library", "GWB Presidential Library", R.drawable.bush_library,
                 R.raw.number_two));
-        words.add(new ListItem("The Sixth Floor Museum at Dealey Plaza", "The Sixth Floor Museum at Dealey Plaza", R.drawable.number_three,
+        words.add(new ListItem("Sixth Floor Museum", "Sixth Floor Museum", R.drawable.delany_min,
                 R.raw.number_three));
-        words.add(new ListItem("Dallas Museum of Art", "Dallas Museum of Art", R.drawable.number_four,
+        words.add(new ListItem("Dallas Museum of Art", "Dallas Museum of Art", R.drawable.art_museum,
                 R.raw.number_four));
-        words.add(new ListItem("Perot Museum of Nature and Science", "Perot Museum of Nature and Science", R.drawable.number_five,
+        words.add(new ListItem("Perot Museum", "Perot Museum", R.drawable.perot_museum,
                 R.raw.number_five));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
